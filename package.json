@@ -1,0 +1,9 @@
+{
+  "name": "detach-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npx serve . --listen 3000",
+    "dev": "npx serve . --listen 3000"
+  }
+}

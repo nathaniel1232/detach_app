@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detach — Earn Your Screen Time</title>
+  <meta name="description" content="Detach turns your phone into a reward. Complete real-world side quests, verify with a photo, and earn the screen time you actually deserve.">
+  <meta property="og:title" content="Detach — Earn Your Screen Time">
+  <meta property="og:description" content="Complete real-world side quests to unlock screen time. The app that fights phone addiction.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="/" class="logo">Detach</a>
+        <div class="nav-right">
+          <span class="nav-badge">iOS — Coming Soon</span>
+          <a href="#waitlist" class="btn btn-outline">Join Waitlist</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+
+        <div class="hero-text">
+          <div class="eyebrow">The app that fights back</div>
+          <h1>Earn your<br><span class="text-green">screen time.</span></h1>
+          <p class="hero-sub">Your phone is engineered to keep you scrolling forever. Detach flips the script — complete real-world side quests, snap a photo to verify, and unlock your screen time as a reward.</p>
+          <div class="hero-actions">
+            <a href="#waitlist" class="btn btn-primary">Join the Waitlist</a>
+            <div class="store-note">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              iOS only — App Store soon
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-phone">
+          <div class="phone-glow"></div>
+          <div class="iphone">
+            <div class="iphone-buttons-left">
+              <div class="iphone-btn silent-switch"></div>
+              <div class="iphone-btn vol-up"></div>
+              <div class="iphone-btn vol-down"></div>
+            </div>
+            <div class="iphone-buttons-right">
+              <div class="iphone-btn power-btn"></div>
+            </div>
+            <div class="iphone-frame">
+              <div class="iphone-screen">
+                <div class="dynamic-island"></div>
+                <video class="app-video" id="appVideo" autoplay muted loop playsinline>
+                  <source src="preview.mp4" type="video/mp4">
+                </video>
+                <div class="app-fallback" id="appFallback">
+                  <div class="app-status-bar">
+                    <span>9:41</span>
+                    <div class="app-status-icons">
+                      <svg width="15" height="11" viewBox="0 0 15 11" fill="white"><rect x="0" y="2.5" width="2.5" height="8.5" rx="0.8"/><rect x="4" y="1.5" width="2.5" height="9.5" rx="0.8"/><rect x="8" y="0" width="2.5" height="11" rx="0.8"/><rect x="12" y="0" width="2.5" height="11" rx="0.8" opacity="0.35"/></svg>
+                      <div class="app-battery">
+                        <div class="app-battery-fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="app-body">
+                    <div class="app-greeting">Good morning</div>
+                    <div class="app-main-title">Today's Quests</div>
+                    <div class="app-time-card">
+                      <div class="atc-label">Screen time earned today</div>
+                      <div class="atc-value">47 <span>min</span></div>
+                      <div class="atc-bar"><div class="atc-fill"></div></div>
+                      <div class="atc-hint">Complete quests to unlock more</div>
+                    </div>
+                    <div class="quest-card quest-active">
+                      <div class="qc-top">
+                        <span class="qc-tag">Active</span>
+                        <span class="qc-reward">+30 min</span>
+                      </div>
+                      <div class="qc-title">Morning Walk</div>
+                      <div class="qc-desc">Walk outside for 20 min and photograph something beautiful</div>
+                      <div class="qc-verify">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                        Snap to Verify
+                      </div>
+                    </div>
+                    <div class="quest-card quest-locked">
+                      <div class="qc-top">
+                        <span class="qc-tag tag-locked">Locked</span>
+                        <span class="qc-reward">+20 min</span>
+                      </div>
+                      <div class="qc-title">Read 10 Pages</div>
+                      <div class="qc-desc">Read a physical book and photograph the page</div>
+                    </div>
+                  </div>
+                  <div class="app-nav-bar">
+                    <div class="app-nav-item nav-active">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                      <span>Home</span>
+                    </div>
+                    <div class="app-nav-item">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg>
+                      <span>Quests</span>
+                    </div>
+                    <div class="app-nav-item">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                      <span>Progress</span>
+                    </div>
+                    <div class="app-nav-item">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                      <span>Profile</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE TICKER -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <div class="marquee-inner">
+        <span>The average person spends 4.5 hours on their phone daily</span>
+        <span class="marquee-dot"></span>
+        <span>That's 68 days a year lost to scrolling</span>
+        <span class="marquee-dot"></span>
+        <span>Social media is engineered to be addictive</span>
+        <span class="marquee-dot"></span>
+        <span>Phone addiction affects 1 in 4 people</span>
+        <span class="marquee-dot"></span>
+        <span>The average person checks their phone 96 times per day</span>
+        <span class="marquee-dot"></span>
+        <span>Infinite scroll was designed to keep you trapped</span>
+        <span class="marquee-dot"></span>
+        <span>The average person spends 4.5 hours on their phone daily</span>
+        <span class="marquee-dot"></span>
+        <span>That's 68 days a year lost to scrolling</span>
+        <span class="marquee-dot"></span>
+        <span>Social media is engineered to be addictive</span>
+        <span class="marquee-dot"></span>
+        <span>Phone addiction affects 1 in 4 people</span>
+        <span class="marquee-dot"></span>
+        <span>The average person checks their phone 96 times per day</span>
+        <span class="marquee-dot"></span>
+        <span>Infinite scroll was designed to keep you trapped</span>
+        <span class="marquee-dot"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROBLEM -->
+  <section class="section">
+    <div class="container">
+      <div class="problem-inner">
+        <div class="problem-text reveal">
+          <div class="section-label">The problem</div>
+          <h2>Your phone is winning.<br>We're changing that.</h2>
+          <p>Every app is optimized to steal your attention. Infinite scroll, dopamine loops, notification traps — the system is rigged against you. Detach is the first app designed to put you back in control.</p>
+        </div>
+        <div class="stats-grid reveal">
+          <div class="stat-card">
+            <div class="stat-number" data-target="4.5">0</div>
+            <div class="stat-unit">hours</div>
+            <div class="stat-label">Average daily phone use per person</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="68">0</div>
+            <div class="stat-unit">days/year</div>
+            <div class="stat-label">Lost to mindless scrolling every year</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="96">0</div>
+            <div class="stat-unit">times/day</div>
+            <div class="stat-label">The average number of phone checks per day</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="how-header reveal">
+        <div class="section-label label-green">How it works</div>
+        <h2 class="light">Simple rules.<br>Real results.</h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step reveal" style="--step-delay: 0ms">
+          <div class="step-num">01</div>
+          <div class="step-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <h3>Get a side quest</h3>
+          <p>Each day, Detach assigns you real-world missions — take a walk, read a book, cook a meal, call a friend. Offline living, intentionally.</p>
+        </div>
+        <div class="step reveal" style="--step-delay: 120ms">
+          <div class="step-num">02</div>
+          <div class="step-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          </div>
+          <h3>Snap a photo to verify</h3>
+          <p>Complete the quest in the real world and take a photo as proof. No shortcuts. The camera keeps you honest — and the world keeps you present.</p>
+        </div>
+        <div class="step reveal" style="--step-delay: 240ms">
+          <div class="step-num">03</div>
+          <div class="step-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3>Unlock your screen time</h3>
+          <p>Quests completed, screen time earned. Use it however you want — you've actually deserved it. Every minute living gets you more time online.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAITLIST -->
+  <section class="section waitlist-section" id="waitlist">
+    <div class="container">
+      <div class="waitlist-inner reveal">
+        <div class="waitlist-text">
+          <div class="section-label">Early access</div>
+          <h2>Be the first to take<br>back your time.</h2>
+          <p>Detach is launching on iOS soon. Join the waitlist and get notified when it drops — plus early access before the public release.</p>
+        </div>
+        <div class="waitlist-form-wrap">
+          <form class="waitlist-form" id="waitlistForm" novalidate>
+            <div class="form-row">
+              <input
+                type="email"
+                id="emailInput"
+                class="email-input"
+                placeholder="your@email.com"
+                autocomplete="email"
+                required
+              >
+              <button type="submit" class="btn btn-green" id="submitBtn">
+                <span class="btn-label">Notify Me</span>
+                <span class="btn-spinner" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
+                </span>
+              </button>
+            </div>
+            <p class="form-msg" id="formMsg" aria-live="polite"></p>
+          </form>
+          <p class="form-note">No spam. Unsubscribe anytime. iOS only at launch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">Detach</div>
+        <p class="footer-copy">Earn your screen time. &copy; 2025 Detach. All rights reserved. &nbsp;&middot;&nbsp; <span class="name-note">App name not yet confirmed.</span></p>
+        <div class="footer-links">
+          <a href="mailto:hello@detachapp.com">Contact</a>
+          <a href="#">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
